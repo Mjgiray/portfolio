@@ -1,0 +1,241 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+        <title>Personal Portfolio</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        
+    </head> 
+    <body>
+        <header>
+            <div class="logo-container">
+                <img class="logoimg" src="image/digital tech book logo design template.png" width="80">
+                <a href="#" class="logo">MLG</a>
+              </div>
+          <nav>
+            <a href="home.html">Home</a>
+            <a href="" class="active">About</a>
+            <a href="portfolio.html" >Portfolio</a>
+            <a href="contact.html" >Contacts</a>
+          </nav>
+        </header>
+        <main>
+          <div class="hero-section">
+            <h1 class="background-text">THINK WEB</h1>
+      
+            <div class="content-container">
+              <img src="image/pic1.jpg" alt="MJ" class="profile-img">
+              <div class="intro-text">
+                <h2>Hi! I'm <span> MJ </span></h2>
+                <p>
+                  Web design is the creative process of building websites that are both visually appealing and functional. It combines layout, color, typography, and user experience to craft digital spaces that are easy to navigate and enjoyable to use. As someone starting out in web design, I’m learning how to structure pages with HTML, style them with CSS, and ensure they look great on all screen sizes. What I love most is the balance between creativity and logic every line of code shapes how people experience the web.
+                </p>
+                <p>As an aspiring web developer with a growing passion for crafting clean, responsive websites. I'm currently building my skills in HTML, CSS and JavaScript. I love turning ideas into functional, user-friendly web experiences. Every project I work on is a new chance to grow and challenge myself and I'm excited to keep learning, collaborating, and coding!</p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </main>
+          
+    </body>
+    </html>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B');
+
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          text-decoration: none;
+          border: none;
+          outline: none;
+          font-family: 'Poppins' sans-serif;
+      }
+      
+      html{
+          font-size: 62.5%;
+      }
+      
+      body{
+       
+          height: 100vh;
+          margin: 0;
+          overflow-x: hidden;
+          background: linear-gradient(135deg, #5273ad, #4993d8);
+          
+      }
+      header {
+          margin-top: 20px;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          padding: 2rem 9%;
+          background-color: transparent;
+          filter: drop-shadow(10px);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          z-index: 100;
+        }
+      .logo{
+          font-size: 3rem;
+          color: #ffffff;
+          font-weight: 900;
+          cursor: pointer;
+          transition: 0.5 ease;
+          justify-content: space-between;
+      }
+      .logo-container {
+          display: flex;
+          align-items: center;
+          gap: 10px; 
+        }
+      .logo:hover{
+          transform: scale(1.1);
+      }
+      .logoimg{
+          align-items: center;
+          transition: 0.5 ease;
+          cursor: pointer;
+      
+      }
+      .logoimg:hover{
+          transform: scale(1.1);
+      }
+      nav a{
+          font-size: 2.5rem;
+          color: #88ffff;
+          margin-left: 4rem;
+          font-weight: 500;
+          transition: 0.3 ease;
+          border-bottom: 3px solid transparent;
+          
+      }
+      nav a:hover, 
+      nav a:active{
+          color:#000000;
+          border-bottom: 3px solid #000000;
+      }
+      
+      @media(max-width:995px){
+          nav{
+              position: absolute;
+              top: 100%;
+              right: 0;
+              width: 40%;
+              border-left: 3px solid #88ffff;
+              border-bottom: 3px solid #88ffff;
+              border-bottom-left-radius: 2rem;
+              padding: 1rem solid;
+              background-color: #5273ad;
+              border-top: 0.1rem solid #88ffff(0,0,0,0.1);
+      }
+      nav.active{
+          display: block;
+      }
+      nav a{
+          display: block;
+          font-size: 2rem;
+          margin: 3rem 0;
+      }
+      nav a:hover,
+      nav a.active{
+          padding: 1rem;
+          border-radius: 0.5rem;
+          border-bottom: 0.5rem solid #88ffff ;
+      }
+      }
+      .hero-section {
+        position: relative;
+        padding-top: 250px;;
+        text-align: center;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 80vh;
+        
+      }
+      
+      .background-text {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        font-size: 26rem;
+        font-weight: bold;
+        color: #e2f9f4; 
+        z-index: 1;
+        opacity: 0;
+        animation: fadeDown 1.5s ease-out forwards; 
+      }
+      @keyframes fadeDown {
+        0% {
+        opacity: 0;
+        transform: translateY(-50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+      }
+      
+      .content-container {
+        position: relative;
+        width: 100%;
+        max-width: 165rem;  
+        z-index: 2;
+        align-items: center;
+        gap: 1rem;
+        display: inline-flex;
+        flex-direction: column;
+          border: 1px solid #ffffff;
+          justify-content: center;
+          
+          animation: fadeInUp 1s ease-out forwards
+      }
+      @keyframes fadeInUp {
+        0% {
+        opacity: 0;
+        transform: translateY(50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+      }
+      
+      .profile-img {
+        margin-top: 50px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 1px solid white;
+        object-fit: cover;
+        justify-content: center;
+        cursor: pointer;
+      }
+      .profile-img:hover {
+  transform: scale(1.1);
+}
+      .intro-text h2 {
+        font-size: 32px;
+        margin: 0;
+      }
+      
+      .intro-text h2 span {
+        font-weight: bold;
+        color: aliceblue;
+       
+      }
+      
+      .intro-text p {
+        font-size: 18px;
+        max-width: 600px;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+      </style>
+    
